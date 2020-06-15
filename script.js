@@ -15,10 +15,9 @@ function writePassword() {
 
     var password = "";
     var passwordArray = Array(length);
+    var passwordText = document.querySelector("#password");
+    passwordText.value = password;
   }
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
 );
 
 for (i = 0; i < length; i++) {
@@ -32,6 +31,6 @@ return Array
 
 //textbox display
 document.getElementById("card-body").value = password;
-
+document.querySelector(".result");
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
